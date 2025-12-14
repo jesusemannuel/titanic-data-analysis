@@ -1,5 +1,5 @@
 from load_data import load_dataset
-from analysis import show_shape, show_head, show_missing_values
+from analysis import show_shape, show_head, show_missing_values, show_types_values
 
 def main():
     
@@ -8,6 +8,7 @@ def main():
     show_shape(df_train)
     show_head(df_train)
     show_missing_values(df_train)
+    show_types_values(df_train)
 
 
 

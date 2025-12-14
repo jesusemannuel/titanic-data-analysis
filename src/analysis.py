@@ -14,3 +14,6 @@ def show_missing_values(df: pd.DataFrame) -> None:
     print(f'Valores ausentes por colunas:')
     print(df.isna().sum())
 
+def show_types_values(df: pd.DataFrame) -> None:
+    print('Tipos de valores das colunas:')
+    print(df.dtypes)

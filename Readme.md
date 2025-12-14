@@ -5,6 +5,8 @@ Projeto de análise de dados utilizando Python e Pandas para explorar o dataset 
 
 ## Dataset
 Fonte: Kaggle – Titanic: Machine Learning from Disaster.
+- **train.csv** – dados principais para análise exploratória
+- **test.csv** – dados para possível modelagem futura
 
 ## Tecnologias
 - Python
@@ -13,7 +15,9 @@ Fonte: Kaggle – Titanic: Machine Learning from Disaster.
 - Matplotlib
 
 ## Estrutura do Projeto
-Projeto estruturado utilizando scripts Python, sem p uso de notebooks.
+Projeto estruturado utilizando scripts Python, sem  uso de notebooks.
 
 ## Status
 Em desenvolvimento.
+
+

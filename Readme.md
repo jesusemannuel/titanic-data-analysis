@@ -15,15 +15,50 @@ Fonte: Kaggle – Titanic: Machine Learning from Disaster.
 - Matplotlib
 
 ## Estrutura do Projeto
-Projeto estruturado utilizando scripts Python, sem  uso de notebooks.
+Projeto estruturado utilizando scripts Python, sem o uso de notebooks.
 
 ## Análise de Valores Ausentes
 
-- A coluna Age possui 177 valores ausentes (20%), é uma Variável relevante para sobrevivência, que será tratada por imputação.
-- A coluna Cabin há 687 valores ausentes (77%), essa ausência indica possível padrão de classe social, que eerá transformada em uma variável binária.
-- Embarked só existe 2 valores ausentes, que serão preenchidos com o valor mais frequente.
+Após a inspeção inicial do dataset, foram identificados os seguintes valores ausentes:
+
+- **Age**: 177 valores ausentes (20%)
+- **Cabin**: 687 valores ausentes (77%)
+- **Embarked**: 2 valores ausentes
+
+## Estratégia de Limpeza de Dados
+
+### Coluna Age
+- Variável  relevante para a análise de sobrevivência
+- Os valores ausentes foram preenchidos utilizando a **mediana da idade por sexo**
+- A mediana foi escolhida por ser mais resistentes a variações
+
+### Coluna Embarked
+- Possui apenas 2 valores ausentes
+- Os valores ausentes foram preenchidos com o **valor mais frequente (moda)** da coluna
+
+
+### Coluna Cabin
+- Não foi realizada a limpeza da coluna
+- A coluna será utilizada posteriormente para **criação de variáveis categóricas**
+
+## Transformações e Feature Engineering
+
+As transformações serão realizadas no arquivo `transform_data.py`, incluindo:
+
+- Criação de variáveis categóricas a partir da coluna `Cabin`
+- Criação de variáveis derivadas relacionadas à estrutura familiar
+- Conversão de tipos quando necessário para análise
 
 ## Status
+
 Em desenvolvimento.
+
+## Execução do Projeto
+
+Para executar o pipeline principal:
+
+```bash
+python src/main.py
+
 
 
